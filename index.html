@@ -1,58 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>MODUX — Projeto IHC</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+</head>
+
 <body>
 
+  <!-- NAVBAR -->
+
+  <nav class="navbar">
+    <div class="nav-logo">MODUX</div>
+
+    <div class="nav-links">
+      <a href="#sobre">Sobre</a>
+      <a href="#problemas">Problemas</a>
+      <a href="#prototipo">Protótipo</a>
+      <a href="#equipe">Equipe</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+
   <section class="hero">
+
+    <div class="hero-gradient"></div>
+
     <div class="container">
-      <h1>MODUX</h1>
+
+      <div class="badge">
+        Projeto de IHC/UX • 2026
+      </div>
+
+      <h1>
+        Interfaces contextuais
+        para IA.
+      </h1>
 
       <p>
-        Uma interface contextual para modelos de linguagem,
-        criada para reduzir confusão, melhorar organização
-        e incentivar interações mais conscientes com IA.
+        Uma nova forma de interagir com modelos de linguagem,
+        separando tarefas em modos especializados para melhorar
+        organização, contexto e experiência do usuário.
       </p>
+
+      <div class="hero-buttons">
+        <a
+          href="https://print-yew-65752518.figma.site/"
+          target="_blank"
+          class="primary-button"
+        >
+          Abrir Protótipo
+        </a>
+
+        <a
+          href="#sobre"
+          class="secondary-button"
+        >
+          Ver Projeto
+        </a>
+      </div>
+
     </div>
   </section>
 
   <div class="container">
 
-    <section>
-      <h2 class="section-title">Sobre o Projeto</h2>
+    <!-- SOBRE -->
+
+    <section id="sobre">
+
+      <h2 class="section-title">
+        Sobre o Projeto
+      </h2>
 
       <p class="section-subtitle">
-        O MODUX propõe diferentes modos de interação com IA,
-        adaptando a interface ao objetivo do usuário.
+        O MODUX propõe uma experiência mais organizada e contextual
+        para o uso de ferramentas de IA.
       </p>
 
       <div class="card">
+
         <p>
           O projeto surgiu a partir de entrevistas com usuários
-          frequentes de ferramentas como ChatGPT, Claude e Gemini,
-          identificando problemas relacionados a contexto,
-          organização, dependência e usabilidade.
+          frequentes de ferramentas como ChatGPT, Claude, Gemini
+          e Copilot.
         </p>
+
+        <br>
+
+        <p>
+          Durante a pesquisa identificamos problemas relacionados
+          à organização de conversas, perda de contexto,
+          dependência excessiva da IA e dificuldade de adaptação
+          da interface para diferentes tarefas.
+        </p>
+
       </div>
+
     </section>
 
-    <section>
-      <h2 class="section-title">Problemas Identificados</h2>
+    <!-- PROBLEMAS -->
+
+    <section id="problemas">
+
+      <h2 class="section-title">
+        Problemas Identificados
+      </h2>
+
+      <p class="section-subtitle">
+        Principais dores identificadas nas entrevistas.
+      </p>
 
       <div class="grid grid-2">
 
         <div class="card">
           <h3>Histórico confuso</h3>
+
           <p>
-            Conversas longas dificultam encontrar informações antigas.
+            Conversas longas dificultam encontrar informações importantes.
           </p>
         </div>
 
         <div class="card">
           <h3>Mesma interface para tudo</h3>
+
           <p>
-            Estudar, programar e brainstorm utilizam o mesmo fluxo.
+            Estudar, programar e brainstorm utilizam exatamente o mesmo fluxo.
           </p>
         </div>
 
         <div class="card">
           <h3>Dependência da IA</h3>
+
           <p>
             Usuários relataram dificuldade em realizar tarefas sem auxílio.
           </p>
@@ -60,76 +151,119 @@
 
         <div class="card">
           <h3>Perda de contexto</h3>
+
           <p>
             Sessões extensas se tornam difíceis de acompanhar.
           </p>
         </div>
 
       </div>
+
     </section>
 
-    <section>
-      <h2 class="section-title">Home</h2>
+    <!-- BRAINSTORM -->
 
-      <div class="card">
-        <img src="images/TelaInicial.png">
+    <section>
+
+      <h2 class="section-title">
+        Brainstorming
+      </h2>
+
+      <p class="section-subtitle">
+        Ideias iniciais, sketches e discussões do grupo.
+      </p>
+
+      <div class="card image-card">
+        <img src="images/brainstorm1.png" alt="">
       </div>
+
     </section>
 
-    <section>
-      <h2 class="section-title">Modo Brainstorming</h2>
-
-      <div class="card">
-        <img src="images/ModoBrainstorm.png">
-      </div>
-    </section>
+    <!-- WIREFRAMES -->
 
     <section>
-      <h2 class="section-title">Historico</h2>
 
-      <div class="card">
-        <img src="images/Historico.png">
-      </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">Sketches e Brainstorming</h2>
+      <h2 class="section-title">
+        Sketches e Wireframes
+      </h2>
 
       <div class="grid grid-2">
 
-        <div class="card">
-          <img src="images/brainstorm1.png">
+        <div class="card image-card">
+          <img src="images/sketch1.png" alt="">
         </div>
 
-        <div class="card">
-          <img src="images/sketch1.png">
-        </div>
-
-        <div class="card">
-          <img src="images/sketch2.png">
+        <div class="card image-card">
+          <img src="images/sketch2.png" alt="">
         </div>
 
       </div>
+
     </section>
 
-    <section>
-      <h2 class="section-title">Protótipo Navegável</h2>
+    <!-- PROTOTIPO -->
+
+    <section id="prototipo">
+
+      <h2 class="section-title">
+        Protótipo Low-Fidelity
+      </h2>
 
       <p class="section-subtitle">
-        Acesse o fluxo interativo do protótipo no Figma.
+        Principais telas do fluxo desenvolvido no Figma.
       </p>
 
-      <a
-        href="LINK_DO_FIGMA"
-        target="https://print-yew-65752518.figma.site/"
-        class="prototype-button"
-      >
-        Abrir Protótipo
-      </a>
+      <div class="grid grid-2">
+
+        <div class="card image-card">
+          <img src="images/TelaInicial.png" alt="">
+        </div>
+
+        <div class="card image-card">
+          <img src="images/ModoBrainstorm.png" alt="">
+        </div>
+
+        <div class="card image-card">
+          <img src="images/Historico.png" alt="">
+        </div>
+
+      </div>
+
     </section>
 
+    <!-- LINK FIGMA -->
+
     <section>
-      <h2 class="section-title">Equipe</h2>
+
+      <div class="prototype-section">
+
+        <h2>
+          Acesse o protótipo navegável
+        </h2>
+
+        <p>
+          Explore o fluxo interativo desenvolvido no Figma.
+        </p>
+
+        <a
+          href="https://print-yew-65752518.figma.site/"
+          target="_blank"
+          class="primary-button"
+        >
+          Abrir Protótipo
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- EQUIPE -->
+
+    <section id="equipe">
+
+      <h2 class="section-title">
+        Equipe
+      </h2>
 
       <div class="team-grid">
 
@@ -154,12 +288,14 @@
         </div>
 
       </div>
+
     </section>
 
   </div>
 
   <footer>
-    Projeto desenvolvido para a disciplina de IHC/UX — 2026
+    MODUX — Projeto de IHC/UX • 2026
   </footer>
 
 </body>
+</html>
