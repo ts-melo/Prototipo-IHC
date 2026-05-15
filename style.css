@@ -1,42 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: Inter, Arial, sans-serif;
   background: #fafafa;
-  color: #222;
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px;
+  color: #111827;
   line-height: 1.7;
 }
 
-header {
-  margin-bottom: 60px;
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 24px;
 }
 
-h1 {
-  font-size: 56px;
-  margin-bottom: 10px;
+.hero {
+  text-align: center;
+  padding: 120px 24px 100px;
 }
 
-h2 {
+.hero h1 {
+  font-size: 72px;
+  font-weight: 800;
+  letter-spacing: -2px;
   margin-bottom: 20px;
 }
 
+.hero p {
+  font-size: 22px;
+  color: #6b7280;
+  max-width: 700px;
+  margin: auto;
+}
+
 section {
-  margin-bottom: 80px;
+  margin-bottom: 120px;
+}
+
+.section-title {
+  font-size: 42px;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+.section-subtitle {
+  color: #6b7280;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 28px;
+  padding: 32px;
+  margin-bottom: 32px;
+  box-shadow:
+    0 4px 20px rgba(0,0,0,0.03);
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 img {
   width: 100%;
-  border-radius: 16px;
-  border: 1px solid #ddd;
-  margin-bottom: 20px;
+  border-radius: 18px;
+  margin-top: 20px;
+  border: 1px solid #e5e7eb;
 }
 
-a {
-  display: inline-block;
-  padding: 14px 22px;
-  background: black;
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+.prototype-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  background: #111827;
   color: white;
-  border-radius: 12px;
+  padding: 16px 24px;
+
+  border-radius: 16px;
   text-decoration: none;
+  font-weight: 600;
+
+  transition: 0.2s ease;
+}
+
+.prototype-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.team-member {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 22px;
+  padding: 24px;
+}
+
+.team-member h3 {
+  margin-bottom: 8px;
+}
+
+footer {
+  padding: 60px 24px;
+  text-align: center;
+  color: #6b7280;
 }

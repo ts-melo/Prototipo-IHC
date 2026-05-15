@@ -1,82 +1,165 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto IHC</title>
-
-  <link rel="stylesheet" href="style.css">
-</head>
-
 <body>
 
-  <header>
-    <h1>MODUX</h1>
+  <section class="hero">
+    <div class="container">
+      <h1>MODUX</h1>
 
-    <p>
-      Interface contextual para modelos de linguagem
-    </p>
-  </header>
-
-  <section>
-    <h2>Sobre o Projeto</h2>
-
-    <p>
-      O MODUX propõe uma interface adaptativa para ferramentas de IA,
-      separando diferentes tarefas em modos especializados de interação.
-    </p>
+      <p>
+        Uma interface contextual para modelos de linguagem,
+        criada para reduzir confusão, melhorar organização
+        e incentivar interações mais conscientes com IA.
+      </p>
+    </div>
   </section>
 
-  <section>
-    <h2>Problemas Identificados</h2>
+  <div class="container">
 
-    <ul>
-      <li>Histórico confuso</li>
-      <li>Dependência excessiva da IA</li>
-      <li>Mesmo layout para tarefas diferentes</li>
-      <li>Dificuldade em recuperar informações</li>
-    </ul>
-  </section>
+    <section>
+      <h2 class="section-title">Sobre o Projeto</h2>
 
-  <section>
-    <h2>Brainstorming</h2>
+      <p class="section-subtitle">
+        O MODUX propõe diferentes modos de interação com IA,
+        adaptando a interface ao objetivo do usuário.
+      </p>
 
-    <img src="images/brainstorm1.png">
-  </section>
+      <div class="card">
+        <p>
+          O projeto surgiu a partir de entrevistas com usuários
+          frequentes de ferramentas como ChatGPT, Claude e Gemini,
+          identificando problemas relacionados a contexto,
+          organização, dependência e usabilidade.
+        </p>
+      </div>
+    </section>
 
-  <section>
-    <h2>Sketches</h2>
+    <section>
+      <h2 class="section-title">Problemas Identificados</h2>
 
-    <img src="images/sketch1.png">
-    <img src="images/sketch2.png">
-  </section>
+      <div class="grid grid-2">
 
-  <section>
-    <h2>Protótipo Low-Fidelity</h2>
+        <div class="card">
+          <h3>Histórico confuso</h3>
+          <p>
+            Conversas longas dificultam encontrar informações antigas.
+          </p>
+        </div>
 
-    <img src="images/TelaInicial.png">
-    <img src="images/Historico.png">
-    <img src="images/ModoBrainstorm.png">
-  </section>
+        <div class="card">
+          <h3>Mesma interface para tudo</h3>
+          <p>
+            Estudar, programar e brainstorm utilizam o mesmo fluxo.
+          </p>
+        </div>
 
-  <section>
-    <h2>Protótipo Navegável</h2>
+        <div class="card">
+          <h3>Dependência da IA</h3>
+          <p>
+            Usuários relataram dificuldade em realizar tarefas sem auxílio.
+          </p>
+        </div>
 
-    <a href="LINK_DO_FIGMA" target="https://print-yew-65752518.figma.site/">
-      Abrir Protótipo no Figma
-    </a>
-  </section>
+        <div class="card">
+          <h3>Perda de contexto</h3>
+          <p>
+            Sessões extensas se tornam difíceis de acompanhar.
+          </p>
+        </div>
 
-  <section>
-    <h2>Equipe</h2>
+      </div>
+    </section>
 
-    <ul>
-      <li>Otávio Augusto</li>
-      <li>Rafael Freire</li>
-      <li>Stefani Lumi</li>
-      <li>Thaís Melo</li>
-    </ul>
-  </section>
+    <section>
+      <h2 class="section-title">Home</h2>
+
+      <div class="card">
+        <img src="images/TelaInicial.png">
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Modo Brainstorming</h2>
+
+      <div class="card">
+        <img src="images/ModoBrainstorm.png">
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Historico</h2>
+
+      <div class="card">
+        <img src="images/Historico.png">
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Sketches e Brainstorming</h2>
+
+      <div class="grid grid-2">
+
+        <div class="card">
+          <img src="images/brainstorm1.png">
+        </div>
+
+        <div class="card">
+          <img src="images/sketch1.png">
+        </div>
+
+        <div class="card">
+          <img src="images/sketch2.png">
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Protótipo Navegável</h2>
+
+      <p class="section-subtitle">
+        Acesse o fluxo interativo do protótipo no Figma.
+      </p>
+
+      <a
+        href="LINK_DO_FIGMA"
+        target="https://print-yew-65752518.figma.site/"
+        class="prototype-button"
+      >
+        Abrir Protótipo
+      </a>
+    </section>
+
+    <section>
+      <h2 class="section-title">Equipe</h2>
+
+      <div class="team-grid">
+
+        <div class="team-member">
+          <h3>Nome</h3>
+          <p>Coordenação</p>
+        </div>
+
+        <div class="team-member">
+          <h3>Nome</h3>
+          <p>Pesquisa com Usuários</p>
+        </div>
+
+        <div class="team-member">
+          <h3>Nome</h3>
+          <p>Design e Prototipação</p>
+        </div>
+
+        <div class="team-member">
+          <h3>Nome</h3>
+          <p>Documentação</p>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    Projeto desenvolvido para a disciplina de IHC/UX — 2026
+  </footer>
 
 </body>
-</html>
